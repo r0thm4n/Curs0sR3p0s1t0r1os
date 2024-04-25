@@ -6,9 +6,7 @@
  * si almenos una de mis clases es publica el nombre de mi clase 
  * debe ser igual al nombre del archivo!! 
  * 
- * 
  */
-
  class Uno {}
  class Dos {}
  class Tres {}
