@@ -1,6 +1,6 @@
 # JavaScript 
 
-#### HistoriaHistoria 
+#### Historia
 JavaScript fue creado en 1995 por Brendan Eich mientras trabajaba en Netscape Communications. Originalmente llamado Mocha, luego fue renombrado a LiveScript y finalmente a JavaScript para aprovechar la popularidad de Java en ese momento. Su objetivo inicial era permitir la interacción dinámica en páginas web del lado del cliente (front-end).
 
 #### Evolución:
