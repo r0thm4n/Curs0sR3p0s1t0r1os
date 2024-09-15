@@ -89,5 +89,5 @@ Junto con tu nombre de usuario, el correo electrónico se utiliza para identific
 `git rebase <rama>`
 >Mueve o aplica los cambios de una rama a otra.
 
-
+https://git-scm.com/book/es/v2
 https://pandao.github.io/editor.md/en.html
