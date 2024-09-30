@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Asíncrono</title>
+</head>
+<body>
+    <script>
+        console.log("Inicio");
+
+        function tareaAsincronica() {
+            // Simulamos una tarea que tarda 3 segundos en completarse de manera asíncrona
+            setTimeout(function() {
+                console.log("Tarea completada");
+            }, 3000);  // No bloquea, ejecuta después de 3 segundos
+        }
+
+        tareaAsincronica();
+
+        console.log("Fin");
+
+        // Salida esperada:
+        // Inicio
+        // Fin (se imprime inmediatamente, antes de que se complete la tarea)
+        // Tarea completada (se imprime después de 3 segundos)
+    </script>
+</body>
+</html>

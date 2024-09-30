@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de Callback en JavaScript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #loading {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Callback Asíncrono en JavaScript</h1>
+  <button id="getDataBtn">Obtener Datos</button>
+  <p id="loading"></p>
+  <p id="result"></p>
+
+  <script>
+    // Función que simula la obtención de datos (asíncrona)
+    function fetchData(callback) {
+      const loadingText = document.getElementById("loading");
+      loadingText.textContent = "Cargando datos...";
+
+      // Simulamos una operación que tarda 2 segundos en completarse
+      setTimeout(function() {
+        const data = { nombre: "Ana", edad: 30 };
+        loadingText.textContent = ""; // Limpiamos el mensaje de carga
+        callback(data);  // Llamamos al callback con los datos obtenidos
+      }, 2000);
+      
+    }
+
+
+    // Función que muestra los datos en la página
+    function displayData(data) {
+      const resultText = document.getElementById("result");
+      resultText.textContent = `Nombre: ${data.nombre}, Edad: ${data.edad}`;
+    }
+
+
+    // Evento para el botón que inicia la obtención de datos
+    const button = document.getElementById("getDataBtn");
+
+    button.addEventListener("click", function() {
+      fetchData(displayData);  // Iniciamos la obtención de datos con callback
+    });
+
+  </script>
+</body>
+</html>

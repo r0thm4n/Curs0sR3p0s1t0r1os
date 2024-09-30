@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de DOM</title>
+    <style>
+        #titulo {
+            font-size: 24px;
+            color: blue; /* Color inicial del título */
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="titulo">Este es el título original</h1>
+    <button id="cambiarTitulo">Cambiar Título y Color</button>
+
+    <script>
+        // Seleccionamos el botón y agregamos un evento de clic
+        document.getElementById("cambiarTitulo").addEventListener("click", function() {
+            // Cambiamos el texto del elemento con id="titulo"
+            document.getElementById("titulo").innerText = "Nuevo título";
+            // Cambiamos el color del texto del título
+            //document.getElementById("titulo").style.color = "red";
+        });
+    </script>
+</body>
+</html>

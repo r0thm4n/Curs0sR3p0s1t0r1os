@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de DOM</title>
+</head>
+<body>
+    <h1 id="titulo">Título original</h1>
+    <button onclick="cambiarTexto()">Cambiar texto</button>
+
+    <script>
+        function cambiarTexto() {
+            // Accede al elemento con id "titulo" y cambia su texto
+            document.getElementById('titulo').innerText = "Título cambiado usando el DOM";
+        }
+
+        /*
+        Explicación:
+        HTML: Se tiene un título (<h1>) y un botón. El título tiene un id llamado titulo.
+    JavaScript: Cuando el botón es presionado, la función cambiarTexto() se ejecuta. Esta función accede al elemento con el id titulo usando document.getElementById() y cambia su contenido de texto con innerText.
+    Al hacer clic en el botón, verás cómo el texto del título cambia dinámicamente.
+        */
+    </script>
+</body>
+</html>

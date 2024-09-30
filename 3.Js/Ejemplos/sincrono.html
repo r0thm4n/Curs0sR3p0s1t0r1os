@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Inicio");
+
+        function tareaSincronica() {
+        // Simulamos una tarea que tarda 3 segundos en completarse
+        const start = Date.now();
+        while (Date.now() - start < 3000) {
+            
+        }  // Bloqueo durante 3 segundos
+        console.log("Tarea completada");
+        }
+
+        tareaSincronica();
+
+        console.log("Fin");
+
+        // Salida:
+        // Inicio
+        // Tarea completada (después de 3 segundos)
+        // Fin
+    </script>
+</body>
+</html>

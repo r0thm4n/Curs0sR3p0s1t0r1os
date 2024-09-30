@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de DOM</title>
+    <style>
+        #titulo {
+            font-size: 24px;
+            color: blue; /* Color inicial del título */
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="titulo">Este es el título original</h1>
+    <button id="cambiarTitulo">Cambiar Título y Color</button>
+
+    <script>
+       let persona = {
+                    nombre: 'Ana',
+                    edad: 30,
+                    saludar: function() {
+                        console.log('Hola, soy ' + this.nombre);
+                    }
+            };
+            persona.saludar(); // 'Hola, soy Ana'
+    </script>
+</body>
+</html>
