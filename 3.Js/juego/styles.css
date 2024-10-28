@@ -1,0 +1,33 @@
+#game {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    border: 2px solid #000;
+    background-color: #f0f8ff;
+    overflow: hidden;
+    margin: auto;
+}
+
+#basket {
+    position: absolute;
+    bottom: 10px;
+    width: 60px;
+    height: 20px;
+    background-color: #000;
+    left: 170px;
+}
+
+.star {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+    border-radius: 50%;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+}

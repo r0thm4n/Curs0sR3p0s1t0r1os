@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recorrer Array con forEach</title>
+</head>
+<body>
+
+    <script>
+      // Creamos un array inicial con algunas tareas
+        let tasks = ["Comprar leche", "Estudiar JavaScript", "Limpiar la casa"];
+
+        // Imprimir el array inicial en la consola
+        console.log("Lista de tareas inicial:", tasks);
+
+        // Agregamos una tarea al array usando el método push
+        tasks.push("Ir al gimnasio");
+
+       // Imprimimos el array después de agregar la tarea
+        console.log("Después de agregar 'Ir al gimnasio':", tasks);
+
+        // Eliminamos una tarea específica (por ejemplo, la tarea en la posición 1) usando splice
+        tasks.splice(1, 2);  // Elimina "Estudiar JavaScript" (índice 1)
+
+       // Imprimimos el array después de eliminar la tarea
+        console.log("Después de eliminar la tarea en el índice 1:", tasks);
+ 
+        // Agregar otra tarea
+        tasks.push("Pagar facturas");
+
+        // Imprimir la lista final
+        console.log("Lista de tareas final:", tasks);
+
+    </script>
+
+</body>
+</html>
